@@ -84,9 +84,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun shareUrl() {
-        val encryptedUrl = encryptUrl("https://github.com/javaman97")
-        val shareText = "Check out this encrypted URL: $encryptedUrl"
-
+        val encryptedUrl = encryptUrl("https://github.com/javaman97/Thala-App")
+        val shareText = "Check out the Source Code of THALA App (encrypted URL):   $encryptedUrl"
         val sendIntent = Intent().apply {
             action = Intent.ACTION_SEND
             putExtra(Intent.EXTRA_TEXT, shareText)
